@@ -1,0 +1,25 @@
+.red{
+    color: red;
+}
+.brown{
+    color: brown;
+}
+.black{
+    color: black;
+}
+.blue{
+    color: blue;
+}
+div{
+    background-color: rgb(183, 183, 183);
+}
+.bro{
+    border: 3px solid green;
+    text-align: center;
+}
+p{
+    font-size: x-large;
+}
+span{
+    font-size: x-large;
+}

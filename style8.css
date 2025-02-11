@@ -1,0 +1,31 @@
+h1{ 
+    border-bottom: 2px dashed grey;
+    
+}
+.daddy{
+    display: flex;
+
+}
+.left,.right{
+    flex: 1;
+}
+.right{
+    border-left: 2px solid grey;
+    padding-left: 20px;
+}
+.post{
+    display: flex;
+    align-items: center;
+}
+.post img{
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+.date{
+    color: grey;
+}
+.title{
+    color: blue;
+    font-size: x-large;
+}

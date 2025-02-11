@@ -1,0 +1,44 @@
+.row{
+    display: flex;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+fieldset {
+    border-left: none;
+    border-right: none;
+}
+.checkbox div {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 5px; 
+}
+.checkbox input {
+    width: 20px;
+    height: 20px;
+}
+.payment input{
+    width: 20px;
+    height: 20px;
+    
+}
+button {
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 30px 120px;
+    align-items: center;
+    text-align: center;
+}
