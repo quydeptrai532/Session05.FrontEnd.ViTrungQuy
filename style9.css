@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .row{
     display: flex;
     gap: 20px;
@@ -41,4 +46,7 @@ button {
     padding: 30px 120px;
     align-items: center;
     text-align: center;
+}
+.diddy{
+    background-color: antiquewhite;
 }
