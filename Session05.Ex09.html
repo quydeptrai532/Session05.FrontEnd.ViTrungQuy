@@ -9,101 +9,103 @@
 </head>
 
 <body>
-    <h2>Billing address</h2>
-    <form action="">
-        <div class="row">
-            <div class="input">
-              <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+    <div class="diddy">
+        <h2>Billing address</h2>
+        <form action="">
+            <div class="row">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
             </div>
             <div class="input">
-               <label for="lastname">Lastname</label>
-               <input type="text" name="lastname" id="lastname">
-            </div>
-        </div>
-        <div class="input">
-            <label for="email">Email(Optional)</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div class="input">
-            <label for="address">address</label>
-            <input type="text" name="address" id="address">
-        </div>
-        <div class="input">
-            <label for="address2">address2</label>
-            <input type="text" name="address2" id="address2">
-        </div>
-        <div class="row">
-            <div class="input">
-                <label for="country">Country</label>
-                <select name="country" id="country">
-                    <option value="VietNam">Việt Nam</option>
-                    <option value="ThhaiLand">Thái Lan</option>
-                    <option value="LAO">Lào</option>
-                </select>
+                <label for="email">Email(Optional)</label>
+                <input type="email" name="email" id="email">
             </div>
             <div class="input">
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <option value="Hanoi">Hà Nội</option>
-                    <option value="HCM">Hồ Chí Minh</option>
-                    <option value="DaNang">Đà Nẵng</option>
-                </select>
+                <label for="address">address</label>
+                <input type="text" name="address" id="address">
             </div>
             <div class="input">
-                <label for="zip">Zip</label>
-                <input type="text" name="zip" id="zip">
+                <label for="address2">address2</label>
+                <input type="text" name="address2" id="address2">
             </div>
-        </div>
-        <fieldset class="checkbox"> 
+            <div class="row">
+                <div class="input">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="VietNam">Việt Nam</option>
+                        <option value="ThhaiLand">Thái Lan</option>
+                        <option value="LAO">Lào</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="Hanoi">Hà Nội</option>
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="DaNang">Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip" id="zip">
+                </div>
+            </div>
+            <fieldset class="checkbox">
+                <div>
+                    <input type="checkbox" name="shipaddress" id="shipaddress">
+                    <label for="shipaddress">Shipping address is the same as my billing address</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="saveinfo" id="saveinfo">
+                    <label for="saveinfo">Save this infomation for next time</label>
+                </div>
+            </fieldset>
+            <h2>Payment</h2>
+            <div class="payment">
+                <input type="radio" name="payment" id="creditcard">
+                <label for="creditcard">Credit card</label>
+            </div>
+            <div class="payment">
+                <input type="radio" name="payment" id="debitcard">
+                <label for="debitcard">Debit card</label>
+            </div>
+            <div class="payment">
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal">Paypal</label>
+            </div>
+            <div class="row">
+                <div class="input">
+                    <label for="cardname">Name on card</label>
+                    <input type="text" name="cardname" id="cardname">
+                    <small>Full name ass displayed on card</small>
+                </div>
+                <div class="input">
+                    <label for="cardnumber">Credit card number</label>
+                    <input type="text" name="cardnumber" id="cardnumber">
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 2px solid gray; padding-bottom: 10px;">
+                <div class="input">
+                    <label for="expiration">Expiration</label>
+                    <input type="text" name="expiration" id="expiration">
+                </div>
+                <div class="input">
+                    <label for="CVV">CVV</label>
+                    <input type="text" name="CVV" id="CVV">
+
+                </div>
+            </div>
             <div>
-                <input type="checkbox"name="shipaddress" id="shipaddress">
-                <label for="shipaddress">Shipping address is the same as my billing address</label>
+                <button type="submit">Continue to checkout </button>
             </div>
-            <div>
-                <input type="checkbox" name="saveinfo" id="saveinfo">
-                <label for="saveinfo">Save this infomation for next time</label>
-            </div>
-        </fieldset>
-    <h2>Payment</h2>
-    <div class="payment">
-      <input type="radio" name="payment" id="creditcard">
-      <label for="creditcard">Credit card</label>
+        </form>
     </div>
-    <div class="payment">
-        <input type="radio" name="payment" id="debitcard">
-        <label for="debitcard">Debit card</label>
-    </div>
-    <div class="payment">   
-        <input type="radio" name="payment" id="paypal">
-        <label for="paypal">Paypal</label>
-    </div>
-    <div class="row">
-        <div class="input">
-            <label for="cardname">Name on card</label>
-            <input type="text" name="cardname" id="cardname">
-            <small>Full name ass displayed on card</small>
-        </div>
-        <div class="input">
-            <label for="cardnumber">Credit card number</label>
-            <input type="text" name="cardnumber" id="cardnumber">
-        </div>
-    </div>
-    <div class="row" style="border-bottom: 2px solid gray; padding-bottom: 10px;">
-        <div class="input">
-            <label for="expiration">Expiration</label>
-            <input type="text" name="expiration" id="expiration">
-        </div>
-        <div class="input">
-            <label for="CVV">CVV</label>
-            <input type="text" name="CVV" id="CVV">
-            
-        </div>
-    </div>
-    <div>
-        <button type="submit">Continue to checkout </button>
-    </div>
-    </form>
 </body>
 
 </html>
