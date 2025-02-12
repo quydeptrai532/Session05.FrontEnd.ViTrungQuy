@@ -23,3 +23,20 @@ p{
 span{
     font-size: x-large;
 }
+fieldset{
+    border-left: 5px solid green;
+    background-color: white;
+}
+button{
+    background-color: green;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    border-radius: 10px ;
+    padding: 10px 20px 10px 20px;
+}
+.sub{
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
